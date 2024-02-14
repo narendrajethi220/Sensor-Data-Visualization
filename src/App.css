@@ -9,3 +9,11 @@
 .type {
   color: #27272a;
 }
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+  .image-header {
+    margin-top: 5.2rem;
+    font-size: 1.5rem;
+  }
+}
