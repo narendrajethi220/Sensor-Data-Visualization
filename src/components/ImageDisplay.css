@@ -1,0 +1,28 @@
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Adjust gap as needed */
+  padding: 0.6rem; /* Add padding to the container */
+  height: 80vh;
+}
+
+.image-container div {
+  border: 1px solid #ccc; /* Optional border */
+  padding: 0.5rem;
+  /* margin: 0.5rem; */
+  background-color: white;
+}
+
+.sensor-image {
+  width: 80%;
+  height: 100%;
+  object-fit: cover; /*Maintain aspect ratio while covering the container */
+}
+
+.image-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow to ensure images don't spill out */
+}
