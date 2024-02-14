@@ -1,15 +1,15 @@
 import React from "react";
 import "./ImageDisplay.css";
 
-const ImageDisplay = ({ images }) => {
+const ImageDisplay = ({ sensorimages }) => {
   return (
     <div className="image-container">
-      {images.map((image, index) => (
+      {sensorimages.map((sensorimage, index) => (
         <div key={index}>
           <img
             className="sensor-image"
-            src={image}
-            alt={`Image ${index + 1}`}
+            src={sensorimage}
+            alt={`sensorimage ${index + 1}`}
           />
         </div>
       ))}

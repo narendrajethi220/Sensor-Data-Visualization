@@ -17,7 +17,7 @@ const App = () => {
   };
 
   const [selectedType, setSelectedType] = useState(1);
-  const [images, setImages] = useState(generateImageUrls(1));
+  const [sensorimages, setImages] = useState(generateImageUrls(1));
 
   useEffect(() => {
     // Fetch initial data when the component mounts
@@ -45,7 +45,7 @@ const App = () => {
       <h2 className="image-header">
         Images For Type <span className="type">{selectedType}</span>
       </h2>
-      <ImageDisplay images={images} />
+      <ImageDisplay sensorimages={sensorimages} />
     </div>
   );
 };
